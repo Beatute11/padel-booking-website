@@ -1,0 +1,26 @@
+# XAMPP / Apache
+.htaccess
+error_log
+access_log
+
+# Logs
+*.log
+
+# Cache / temp
+tmp/
+cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Node / Composer
+node_modules/
+vendor/
