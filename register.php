@@ -42,14 +42,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Registracija</title>
 </head>
 <body>
-    <div class="login_form">
-        <h2>Registracija</h2>
-        <form action="register.php" method="POST">
-            <input type="text" name="vardas" placeholder="Vardas" required><br>
-            <input type="email" name="el_pastas" placeholder="El. Pastas" required><br>
-            <input type="password" name="slaptazodis" placeholder="Slaptas" required><br>
-            <button type="submit">Registruotis</button>
-        </form>
+    <div class="container">
+        <div class="login_form">
+            <h2>Registracija</h2>
+            <form action="register.php" method="POST">
+                <input type="text" name="vardas" placeholder="Vardas" required><br>
+                <input type="email" name="el_pastas" placeholder="El. Pastas" required><br>
+                <input type="password" name="slaptazodis" placeholder="Slaptas" required><br>
+                <button type="submit">Registruotis</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
