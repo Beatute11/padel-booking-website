@@ -13,7 +13,6 @@ body {
 	flex-direction: column;
 	height: 100vh;
     overflow-x: hidden;
-    /*text-align: center;*/
 }
 
 header {
@@ -80,8 +79,20 @@ button:focus {
 	outline: none;
 }
 
+#rezervacija {
+    display: flex;
+    justify-content: center;
+
+}
+
 #reservation {
-    margin: 5px auto;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: #41644A;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 .profile {
@@ -124,6 +135,49 @@ button:focus {
 #dropdown a:hover {
     background: #f0f0f0;
 }
+
+.photo-container {
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    width: 100%;
+    /*box-sizing: border-box;*/
+    padding: 20px 0;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+}
+
+.scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.photo-line {
+    display: inline-flex;
+    /*display: flex;*/
+}
+
+.photo-line img {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.photo-line:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to { transform: translateX(-20%); }
+}
+
+/*#####################
+### MANO REZERVACIJOS #
+#####################*/
 
 table {
     margin: auto;

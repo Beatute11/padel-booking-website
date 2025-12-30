@@ -61,8 +61,29 @@ if (!isset($_SESSION['vardas'])) {
                 </p>
         </section>
 
+        <div class="photo-container">
+            <div class="scroll">
+                <div class="photo-line">
+                    <img src="static/rocket2.jpeg" alt="1 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="2 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="3 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="4 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="5 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="6 nuotrauka">
+                </div>
+
+                <div class="photo-line">
+                    <img src="static/rocket2.jpeg" alt="1 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="2 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="3 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="4 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="5 nuotrauka">
+                    <img src="static/rocket2.jpeg" alt="6 nuotrauka">
+                </div>
+            </div>
+        </div>
+
         <section id="rezervacija">
-            <img src="static/rocket2.jpeg" width=100% height="200">
             <a href="reservation.php">
                 <button id="reservation">Rezervuoti aikštelę</button>
             </a>
