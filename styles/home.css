@@ -79,3 +79,139 @@ button:active {
 button:focus {
 	outline: none;
 }
+
+#reservation {
+    margin: 5px auto;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+}
+
+#profileBtn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#profileBtn:hover {
+    background: #34495e;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+#dropdown a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+#dropdown a:hover {
+    background: #f0f0f0;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 70%;
+
+}
+
+#cancel {
+    border: 1px solid #E9762B;
+    background-color: #EBE1D1;
+    color: #E9762B;
+    border-radius: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 2px;
+	padding: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#cancel:hover {
+    background-color: #802f2f;
+
+}
+
+ /* ###########################
+ ##########REZERVACIJA#########
+ #############################*/
+
+.container {
+    max-width: 75%;
+    align-self: center;
+    background-color: #EBE1D1;
+}
+
+.success-box, .error-box {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.success-box h2 {
+    color: #2ecc71;
+}
+
+.error-box h2 {
+    color: #e74c3c;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.slot-taken {
+    border-radius: 20px;
+	border: 2px solid #E9762B;
+	background-color: #EBE1D1;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: not-allowed;
+    text-decoration-line: line-through;
+    text-decoration-color: #E9762B;
+}
+
+.btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 20px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn.reserve {
+    background: #27ae60;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

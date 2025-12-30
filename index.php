@@ -25,9 +25,14 @@ if (!isset($_SESSION['vardas'])) {
                 <a href="#iranga" class="cont-link">Iranga</a>
                 <a href="#kontaktai" class="cont-link">Kontaktai</a>
             </div>
-            <div>
-                <a href="my_reservations.php" >Mano rezervacijos</a>
-                <a href="login.php">Atsijungti</a>
+            <div class="profile">
+                <button id="profileBtn">
+                    <?= htmlspecialchars($_SESSION['vardas']) ?>
+                </button>
+                <div id="dropdown">
+                    <a href="my_reservations.php" >Mano rezervacijos</a>
+                    <a href="login.php">Atsijungti</a>
+                </div>
             </div>
         </header>
 
@@ -59,7 +64,7 @@ if (!isset($_SESSION['vardas'])) {
         <section id="rezervacija">
             <img src="static/rocket2.jpeg" width=100% height="200">
             <a href="reservation.php">
-                <button>Rezervuoti aikštelę</button>
+                <button id="reservation">Rezervuoti aikštelę</button>
             </a>
         </section>
 
@@ -102,6 +107,19 @@ if (!isset($_SESSION['vardas'])) {
             </p>
         </section>
 
-        <a href="login.php">Atsijungti</a>
+         <script>
+            document.getElementById("profileBtn")?.addEventListener("click", function () {
+                const dropdown = document.getElementById("dropdown");
+                dropdown.style.display =
+                    dropdown.style.display === "block" ? "none" : "block";
+            });
+
+            document.addEventListener("click", function (e) {
+                if (!e.target.closest(".profile")) {
+                    const dropdown = document.getElementById("dropdown");
+                    if (dropdown) dropdown.style.display = "none";
+                }
+            });
+        </script>
     </body>
 </html>
